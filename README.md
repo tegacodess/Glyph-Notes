@@ -1,6 +1,12 @@
-# React + Vite
+# Glyph Notes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Glyph notes app is a simple note taking app with functionalities that allow a user to 
+- Add a new note
+- Edit an existing note
+- Save a note
+- and delete a note.
+
+This project was bult with HTML, CSS, JavaScript, ReactJs and Vite. 
 
 Currently, two official plugins are available:
 
