@@ -1,0 +1,89 @@
+.rubik-scribble-regular {
+  font-family: "Rubik Scribble", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+  margin:0;
+  padding: 0;
+}
+/* :root {
+  --background-color: ;
+  --text-color: #000;
+
+}
+.dark-theme {
+  --background-color: #000;
+  --text-color: #fff;
+  
+} */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: hsl(0, 0%, 94%);
+}
+.main{
+  /* max-width: 960px; */
+  margin: 0px auto;
+  padding: 0px auto;
+  min-height: 100vh;
+  /* justify-content: center; */
+}
+
+/* .header{
+  display:flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+  background-color: rgba(153, 113, 10, 0.484);
+} */
+.logo{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.title{
+  font-family:  "Rubik Scribble", system-ui;
+  font-size: 2.5rem;
+  color: rgb(250, 249, 247);
+  font-weight: 800;
+  background-color: #99710a7b;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.notes {
+  max-width: 1200px;
+  margin: 25px 10px;
+  padding: 15px auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+}
+
+@media (max-width: 960px) {
+  .main {
+    /* margin: 10px auto; */
+    /* padding: 10px 5px; */
+  }
+}
+@media(max-width: 600px){
+  .main {
+    /* margin: 5px auto; */
+    /* padding: 5px 2px; */
+  }
+}
+@media screen and (max-width: 900px) {
+  .notes {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .notes {
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+  }
+}
+

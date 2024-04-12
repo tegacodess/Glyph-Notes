@@ -1,0 +1,16 @@
+.footer {
+    background-color: rgba(153, 113, 10, 0.484);
+    padding: 7px;
+    /* border-radius: 10px; */
+    text-align: center;
+}
+
+.footer p {
+    color: rgb(253, 253, 253);
+    font-size: 14px;
+    font-family: "Playfair", serif;
+}   
+img{
+    height: 30px;
+    width:30px;
+}
