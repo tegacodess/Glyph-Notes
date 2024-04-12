@@ -3,7 +3,7 @@ import './Styling/footer.css'
 const Footer = () => {
   return (
     <div className='footer'>
-      <img src="src\assets\writing_icon.svg" ></img>
+      <img src="src\assets\writing_icon.png" ></img>
         <p> Glyph Notes &copy; {new Date().getFullYear()}
         </p>
     </div>
