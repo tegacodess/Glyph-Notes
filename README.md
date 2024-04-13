@@ -6,5 +6,5 @@ Glyph notes app is a simple note taking app with functionalities that allow a us
 - Save a note
 - and delete a note.
 
-This project was bult with HTML, CSS, JavaScript, ReactJs and Vite. 
+This project was built with HTML, CSS, JavaScript, ReactJs and Vite. 
 

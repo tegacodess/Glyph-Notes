@@ -21,12 +21,15 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: hsl(0, 0%, 94%);
+  display: flex;
+  flex-direction: column;
 }
 .main{
   /* max-width: 960px; */
   margin: 0px auto;
   padding: 0px auto;
-  min-height: 100vh;
+  height: 100vh;
+  flex: 1 0 auto;
   /* justify-content: center; */
 }
 
@@ -55,7 +58,7 @@ body {
 }
 
 .notes {
-  max-width: 1200px;
+  
   margin: 25px 10px;
   padding: 15px auto;
   display: grid;
@@ -85,5 +88,4 @@ body {
   .notes {
     grid-template-columns: repeat(1, minmax(300px, 1fr));
   }
-}
-
+} 

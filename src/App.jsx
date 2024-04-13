@@ -1,35 +1,34 @@
 import './App.css'
-import {Paper, Switch} from '@mui/material';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import useMediaQuery from '@mui/material/useMediaQuery';
+// import {Paper, Switch} from '@mui/material';
+// import { ThemeProvider, createTheme } from '@mui/material/styles';
+// import useMediaQuery from '@mui/material/useMediaQuery';
 import Header from './Components/Header'
 import Welcome from './Components/Welcome';
 import Notes from './Components/Notes'
-import Footer from './Components/Footer'
-import { useState } from 'react';
+// import { useState } from 'react';
 
 function App() {
   //material ui theme
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
-  const {mode, setMode} = useState(prefersDarkMode);
+  // const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+  // const {mode, setMode} = useState(prefersDarkMode);
 
-  const appTheme = createTheme({
-    palette: {
-      mode: mode ? 'dark': 'light',
-    },
-  });
-  const handleChange = () => {
-    if (mode) {
-      setMode(false);
-    } else {
-      setMode(true);
-    }
-  };
+  // const appTheme = createTheme({
+  //   palette: {
+  //     mode: mode ? 'dark': 'light',
+  //   },
+  // });
+  // const handleChange = () => {
+  //   if (mode) {
+  //     setMode(false);
+  //   } else {
+  //     setMode(true);
+  //   }
+  // };
 
 
   return (
-    <ThemeProvider theme={appTheme}>
-      <Paper elevation={0} sx={{height:"100vh"}} square> 
+    // <ThemeProvider theme={appTheme}>
+    //   <Paper elevation={0} sx={{height:"100vh"}} square> 
        <div className='main'>
          <Header/>
          {/* <Switch
@@ -42,10 +41,14 @@ function App() {
          <Notes/>
         
          </div>
-      </Paper>
+    //   </Paper>
     
-    </ThemeProvider>
+    // </ThemeProvider>
+    // Themeprovider, and paper are commented because they are not working as expected. 
   )
 }
 
 export default App
+
+// Ever comment in this file is with regards to the theme switcher. It was supposed to implement a toggle switch that allows users switch between light and dark mode but after 
+// adding the prefersDarkMode function so that if the user's deice setting is already in dark mode, it will automatrically be in dark mode, it stopped working.I'm not sure why but i'm going to leave it as is for now.

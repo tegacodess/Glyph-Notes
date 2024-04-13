@@ -8,7 +8,7 @@ const Notes = () => {
     const [inputText, setInputText] = useState('')
     const [notes, setNotes] = useState([])
     const [editToggle, setEditToggle] = useState(null)
-
+   
     const editHandler = (id, text) => { 
           setEditToggle(id)
           setInputText(text)
@@ -28,7 +28,7 @@ const Notes = () => {
                }
            ])
         }
-    
+      
         setInputText('')
         setEditToggle(null)
     }
@@ -37,8 +37,8 @@ const Notes = () => {
         const newNotes = notes.filter((note) => note.id !== id)
         setNotes(newNotes)
     }
-
-    useEffect(() => {
+    
+     useEffect(() => {
         const data = JSON.parse(localStorage.getItem('notes'))
         if(data) {
             setNotes(data)
@@ -50,7 +50,7 @@ const Notes = () => {
 
   return (
     <div className='notes'>
-        {
+                    {
             notes.map((note) => (
                 editToggle === note.id ? 
                 <CreateNote 
