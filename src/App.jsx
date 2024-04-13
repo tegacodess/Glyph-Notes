@@ -5,6 +5,7 @@ import './App.css'
 import Header from './Components/Header'
 import Welcome from './Components/Welcome';
 import Notes from './Components/Notes'
+import Footer from './Components/Footer';
 // import { useState } from 'react';
 
 function App() {
@@ -39,7 +40,7 @@ function App() {
            So i'm going to leave it as is, submit this project to Flexisaf and come back later to work on it.  */}
          <Welcome/>
          <Notes/>
-        
+        {/* <Footer/>  */}
          </div>
     //   </Paper>
     

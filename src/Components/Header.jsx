@@ -1,10 +1,9 @@
 import React from 'react';
-// import logo from './assets/writing_icon.jpg';
-
+import './Styling/header.css'
  
 const Header = () => {
    return (
-     <div>
+     <div >
        
         <h1 className='title'>Glyph Notes</h1>
      </div>
